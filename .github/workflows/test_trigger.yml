@@ -8,6 +8,7 @@ jobs:
   trigger-test-run:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: wait some time
         run: python3 .github/scripts/print_timestamp_and_wait.py
       - name: Invoke test run request
