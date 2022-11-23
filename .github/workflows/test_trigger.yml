@@ -17,3 +17,4 @@ jobs:
           token: ${{ secrets.PAT_TA }}
           repository: AleksiHiltunen/actions
           event-type: CI Smoke Tests
+          client-payload: {"commit_timestamp": "${{ github.event.repository.updated_at }}"}
